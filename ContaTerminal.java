@@ -16,9 +16,9 @@ public class ContaTerminal {
         System.out.print("Digite o valor que deseja sacar: ");
         double valorSolicitado = input.nextDouble();
 
-        // Verificando se o saldo é suficiente para o saque
+
         if (saldo >= valorSolicitado) {
-            saldo -= valorSolicitado; // Atualizando o saldo após o saque
+            saldo -= valorSolicitado;
             System.out.println("Saque realizado com sucesso!");
         } else {
             System.out.println("Saldo insuficiente");
@@ -27,7 +27,7 @@ public class ContaTerminal {
         // Imprimindo o saldo atual
         System.out.println("Saldo atual: " + saldo);
 
-        // Fechando o Scanner
+
         input.close();
 
     }
